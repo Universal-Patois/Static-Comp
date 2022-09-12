@@ -1,0 +1,211 @@
+/* * {
+  border: 1px solid red;
+} */
+
+body {
+  font-family: sans-serif;
+  display: flex;
+  /* flex-direction: row;
+  background-color: rgb(233, 239, 244); */
+  margin: 0px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  justify-content: flex-start;
+  background-color: rgb(40, 49, 65);
+  width: 80vw;
+}
+
+.profile-picture-container,
+.main-container,
+.admin-container,
+.categories-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  padding-left: 25px;
+}
+
+a, h3 {
+  font-size: unset;
+  text-decoration: none;
+  color:rgb(84 94 111)
+}
+
+.profile-picture-container {
+  display: flex;
+  height: 150px;
+  border-bottom: 4px solid rgb(29 43 61);
+}
+
+.profile-name {
+  font-size: 14px;
+  margin-left: 11px;
+}
+
+.arrow-down {
+  width: 0; 
+  height: 0; 
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid rgb(129, 144, 169);
+  display: inline-block;
+  margin-left: 7px;
+}
+
+
+a[href*="#profilePicture"] {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: url(assets/profilePic.jpg);
+  margin-left: 29px;
+  margin-bottom: 15px;
+}
+
+a[href*="#homeButton"], a[href*="#jobsButton"], a[href*="#resumesButton"], a[href*="#tasksButton"], a[href*="#calendarButton"], a[href*="#users"], a[href*="#locations"], a[href*="#workflows"], a[href*="#jobBoards"], a[href*="#social"] {
+  width: 108px;
+  height: 25px;
+  padding-top: 10px;
+  padding-left: 30px;
+  filter: invert(74%) sepia(40%) saturate(153%) hue-rotate(183deg) brightness(81%) contrast(84%);
+}
+
+a[href*="#homeButton"] {
+  background:url(PNG/home.png) left no-repeat;
+}
+
+a[href*="#jobsButton"] {
+  background:url(PNG/briefcase.png) left no-repeat;
+}
+
+a[href*="#resumesButton"] {
+  background:url(PNG/form.png) left no-repeat;
+}
+
+a[href*="#tasksButton"] {
+  background: url(PNG/clipboard-list-check.png) left no-repeat;
+}
+
+a[href*="#calendarButton"] {
+  background: url(PNG/calendar.png) left no-repeat;
+}
+
+a[href*="#users"] {
+ background: url(PNG/users-alt.png) left no-repeat;
+}
+
+a[href*="#locations"] {
+  background: url(PNG/marker.png) left no-repeat;
+}
+
+a[href*="#workflows"] {
+  background: url(PNG/chart-tree.png) left no-repeat;
+}
+
+a[href*="#jobBoards"] {
+  background: url(PNG/duplicate.png) left no-repeat;
+}
+
+a[href*="#social"] {
+  background: url(PNG/share.png) left no-repeat;
+}
+
+.main-container {
+  border-bottom: 4px solid rgb(29 43 61);
+}
+
+.admin-container {
+  border-bottom: 4px solid rgb(29 43 61);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 0.5em;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: rgb(254, 207, 15);
+  margin: 0;
+  width: 1.15em;
+  height: 1.15em;
+}
+
+.top-search-section {
+  display: flex;
+  height: 60px;
+  background-color: #ffff;
+  border-bottom: 1px solid gray;
+}
+
+.search-bar-container {
+  position: relative;
+  display: flex;
+  width: 60vw;
+}
+
+.search-icon {
+  position: absolute;
+  top: 6px;
+  left: 8px;
+  width: 14px;
+}
+
+input[type="text"] {
+  width: 560px;
+  border: none;
+}
+
+a[href*="#searchPrefereces"], a[href*="#addPerson"], a[href*="#addCalendar"], a[href*="#settings"] {
+  width: 5vw;
+  height: 60px;
+  /* margin-top: 17px;
+    margin-left: 15px; */
+}
+
+a[href*="#searchPrefereces"] {
+  border-right: 1px solid gray;
+  background: url(PNG/menu-burger.png) no-repeat;
+}
+
+a[href*="#addPerson"] {
+  border-right: 1px solid gray;
+  border-left: 1px solid gray;
+  background: url(PNG/user-add.png) no-repeat;
+}
+
+a[href*="#addCalendar"] {
+  border-right: 1px solid gray;
+  background: url(PNG/calendar-plus.png) no-repeat;
+}
+
+a[href*="#settings"] {
+  background: url(PNG/apps.png) no-repeat;
+}
+
+.job-information-section {
+  margin-left: 30px;
+}
+
+a[href*="#jobLocation"] {
+
+  background: url(PNG/marker.png) no-repeat;
+}
+
+.job-infographic-container {
+  border-top: 1px solid gray;
+  background-color: rgb(233, 239, 244);
+}
+
+.bottom-page-section {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(233, 239, 244);
+}

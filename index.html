@@ -4,15 +4,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
   <title>Job Fndr - Best Job In The World</title>
 </head>
 <body>
   <header>
     <section class="profile-picture-container">
-      <a href="#profilePicture" class="profile-picture">img profile pic</a>
-      <a href="#profileName" class="profile-name">Andrew Knapick</section>
+      <a href="#profilePicture" class="profile-picture"></a>
+      <a href="#profileName" class="profile-name">Andrew Knapick<div class="arrow-down"></div></a>
     </section>
     <nav class="main-container">
+      <h3 class="main-heading">Main</h3>
       <a href="#homeButton" class="home-button">HOME</a>
       <a href="#jobsButton" class="jobs-button">JOBS</a>
       <a href="#resumesButton" class="resumes-button">RESUMES</a>
@@ -20,6 +22,7 @@
       <a href="#calendarButton" class="calendar-button">CALENDAR</a>
     </nav>
     <nav class="admin-container">
+      <h3 class="admin-heading">Admin</h3>
       <a href="#users" class="users-button">USERS</a>
       <a href="#locations" class="locations-button">LOCATIONS</a>
       <a href="#workflows" class="workflows-button">WORKFLOWS</a>
@@ -27,92 +30,109 @@
       <a href="#social" class="social-button">SOCIAL</a>
     </nav>
     <nav class="categories-container">
-      <a href="#administrative" class="administrative-button">Administrative</a>
-      <a href="#design" class="design-button">Design</a>
-      <a href="#executive" class="executive-button">Executive</a>
-      <a href="#humanResources" class="human-resources-button">Human Resources</a>
+      <h3 class="categories-heading">Categories</h3>
+      <label class="container">
+        <input type="checkbox" checked="checked">
+        Administrative
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">
+        <input type="checkbox">
+        Design
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">
+        <input type="checkbox">
+        Executive
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">
+        <input type="checkbox">
+        Human Resources
+        <span class="checkmark"></span>
+      </label>
     </nav>
   </header>
-  <section class="top-search-section">
-    <a href="#searchPrefereces" class="search-preferences-button"></a>
-    <div class="search-bar-container">
-      <button type="submit" class="search-button"></button>
-      <input type="text" placeholder="Search for a job, task or resume" name="search">
-    </div>
-    <a href="#addPerson" class="add-person-button">img person</a>
-    <a href="#addCalendar" class="add-calendar-button">img calendar</a>
-    <a href="#settings" class="settings-button">img settings</a>
-  </section>
-  <section class="job-information-section">
-    <div class="job-description-container">
-      <h1 class="job-title">Best Job In The World</h1>
-      <a href="#jobLocation" class="job-location-link">Your Favorite, PL</a>
-      <a href="#previewPost" class="preview-post-link">Preview This Post</a>
-    </div>
-    <div class="job-edit-container">
-      <img class="open-job-button">
-      <img class="save-job-button">
-      <img class="edit-job-button">
-      <img class="delete-job-button">
-    </div>
-    <div class="job-navigation-container">
-      <a href="#summary" class="job-summary">Summary</a>
-      <a href="#applicants" class="job-applicants">Applicants</a>
-      <a href="#jobBoard" class="job-board-info">Job Board</a>
-      <a href="#interviews" class="job-interviews">Interviews</a>
-      <a href="#activity" class="job-activity">Activity</a>
-      <a href="#broadcast" class="job-broadcast">Broadcast</a>
-      <a href="#notifications" class="job-notifications">Notifications</a>
-    </div>
-  </section>
-  <section class="job-infographic-container">
-    <div class="job-statistics">
-      <div class="applicants">11,000 Applicants</div>
-      <div class="interviews">10,000 Interviews</div>
-      <div class="forwards">50,000 Forwards</div>
-      <h3 class="totals">TOTALS - Out of 1,000,000 views</h3>
-    </div>
-    <div class="job-applicants">
-      <div class="applicants-graph"></div>
-    </div>
-  </section>
-  <section class="bottom-page-section">
-    <section class="job-information-section">
-      <h2 class="job-description">Job Description</h2>
-      <h2 class="position-title">Position Title <span id="positionTitle">Best Person Ever</span></h2>
-      <h2 class="location">Location <span id="location">Your Favorite, Place</span></h2>
-      <h2 class="employment-type">Employment Type <span id="employmentType">Forever</span></h2>
-      <h2 class="experience"> <span id="experience">Open to </span></h2>
-      <h2 class="status"> <span id="status">Eternal</span></h2>
-      <h2 class="description"> <span id="description">
-        The Best Job Ever is a position for everyone. It is the job you always wanted. You're responsibilities will not overwhelm you while still pushing you to grow. The work will leave you feeling fulfilled, valued, and appreciated. You will leave work at the end of the day looking forward to the next day of work. There is infinite advancement potential as you realize your best self throughout this rewarding career. The heights you can reach with this job are unlimited.
-      </span></h2>
-      <h2 class="hiring-lead">Hiring Lead <span id="hiringLead">You're Favorite Person</span></h2>
-      <h2 class="approved-salary">Approved Salary <span id="approvedSalary">$Whatever, you want</span></h2>
+  <section class="main-page-section">
+    <section class="top-search-section">
+      <a href="#searchPrefereces" class="search-preferences-button"></a>
+      <div class="search-bar-container">
+        <img class="search-icon" src="PNG/search.png">
+        <input type="text" placeholder="Search for a job, task or resume" name="search">
+      </div>
+      <a href="#addPerson" class="add-person-button"></a>
+      <a href="#addCalendar" class="add-calendar-button"></a>
+      <a href="#settings" class="settings-button"></a>
     </section>
-    <section class="job-share-section">
-      <div class="share-to-socials-container">
-        <button type="submit" class="facebook">Post to Facebook</button>
-        <button type="submit" class="twitter">Tweet this Job</button>
-        <button type="submit" class="linkedIn">Post to LinkedIn</button>
+    <section class="job-information-section">
+      <div class="job-description-container">
+        <h1 class="job-title">Best Job In The World</h1>
+        <a href="#jobLocation" class="job-location-link">Your Favorite, PL</a>
+        <a href="#previewPost" class="preview-post-link">Preview This Post</a>
       </div>
-      <div class="link-to-job-container">
-        <h3 class="link-to-job">Link to this Job</h3>
-        <h4 class="link-info">This is a link to the job posting for the best job ever.</h4>
-        <input type="text" placeholder="http://loremipsum.dol/sitametontum" name="copyLink">
-        <button type="copy" class="copy-link-button"></button>
+      <div class="job-edit-container">
+        <img class="open-job-button">
+        <img class="save-job-button">
+        <img class="edit-job-button">
+        <img class="delete-job-button">
       </div>
-      <div class="use-widget-container">
-        <h3 class="use-widget">Use the Button Widget</h3>
-        <h4 class="widget-info">This widget embeds the buttons for sharing the job for submitting a resume on your website.</h4>
-        <input type="text" placeholder="script type=text/javascript.style" name="copyWidget">
-        <button type="copy" class="copy-widget-button"></button>
+      <div class="job-navigation-container">
+        <a href="#summary" class="job-summary">Summary</a>
+        <a href="#applicants" class="job-applicants">Applicants</a>
+        <a href="#jobBoard" class="job-board-info">Job Board</a>
+        <a href="#interviews" class="job-interviews">Interviews</a>
+        <a href="#activity" class="job-activity">Activity</a>
+        <a href="#broadcast" class="job-broadcast">Broadcast</a>
+        <a href="#notifications" class="job-notifications">Notifications</a>
       </div>
-      <div class="upload-resume-email-container">
-        <h3 class="upload-resume">Upload Resumes by Email</h3>
-        <h4 class="upload-resume-info">You can automatically upload multiple resumes to this job by emailing the address bellow.</h4>
-        <div class="upload-resume-email">yourFriend@gmail.com</div>
+    </section>
+    <section class="job-infographic-container">
+      <div class="job-statistics">
+        <div class="applicants">11,000 Applicants</div>
+        <div class="interviews">10,000 Interviews</div>
+        <div class="forwards">50,000 Forwards</div>
+        <h4 class="totals">TOTALS - Out of 1,000,000 views</h4>
       </div>
+      <div class="job-applicants">
+        <div class="applicants-graph"></div>
+      </div>
+    </section>
+    <section class="bottom-page-section">
+      <section class="job-information-section">
+        <h2 class="job-description">Job Description</h2>
+        <h2 class="position-title">Position Title <span id="positionTitle">Best Person Ever</span></h2>
+        <h2 class="location">Location <span id="location">Your Favorite, Place</span></h2>
+        <h2 class="employment-type">Employment Type <span id="employmentType">Forever</span></h2>
+        <h2 class="experience"> <span id="experience">Open to </span></h2>
+        <h2 class="status"> <span id="status">Eternal</span></h2>
+        <h2 class="description"> <span id="description">
+          The Best Job Ever is a position for everyone. It is the job you always wanted. You're responsibilities will not overwhelm you while still pushing you to grow. The work will leave you feeling fulfilled, valued, and appreciated. You will leave work at the end of the day looking forward to the next day of work. There is infinite advancement potential as you realize your best self throughout this rewarding career. The heights you can reach with this job are unlimited.
+        </span></h2>
+        <h2 class="hiring-lead">Hiring Lead <span id="hiringLead">You're Favorite Person</span></h2>
+        <h2 class="approved-salary">Approved Salary <span id="approvedSalary">$Whatever, you want</span></h2>
+      </section>
+      <section class="job-share-section">
+        <div class="share-to-socials-container">
+          <button type="submit" class="facebook">Post to Facebook</button>
+          <button type="submit" class="twitter">Tweet this Job</button>
+          <button type="submit" class="linkedIn">Post to LinkedIn</button>
+        </div>
+        <div class="link-to-job-container">
+          <h3 class="link-to-job">Link to this Job</h3>
+          <h4 class="link-info">This is a link to the job posting for the best job ever.</h4>
+          <input type="text" placeholder="http://loremipsum.dol/sitametontum" name="copyLink">
+        </div>
+        <div class="use-widget-container">
+          <h3 class="use-widget">Use the Button Widget</h3>
+          <h4 class="widget-info">This widget embeds the buttons for sharing the job for submitting a resume on your website.</h4>
+          <input type="text" placeholder="script type=text/javascript.style" name="copyWidget">
+        </div>
+        <div class="upload-resume-email-container">
+          <h3 class="upload-resume">Upload Resumes by Email</h3>
+          <h4 class="upload-resume-info">You can automatically upload multiple resumes to this job by emailing the address bellow.</h4>
+          <div class="upload-resume-email">yourFriend@gmail.com</div>
+        </div>
+      </section>
     </section>
   </section>
   </html>
